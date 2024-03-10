@@ -3,9 +3,9 @@ import TextField from "@mui/material/TextField";
 import React, { useState } from "react";
 import style from "./FeedBackApp.module.css";
 import Button from "@mui/material/Button";
-import FeedbackStore from "./Atoms/FeedBackStore";
+import FeedbackStore from "../Atoms/FeedBackStore";
 import { useRecoilState, useRecoilValue } from "recoil";
-import GiveFeedBack from "./Selector/GiveFeedBack";
+import GiveFeedBack from "../Selector/GiveFeedBack";
 export default function FeedBackApp() {
   let [data, setData] = useRecoilState(FeedbackStore);
   let [show, setShow] = useState({ name: "", remaining: "" });
@@ -48,8 +48,9 @@ export default function FeedBackApp() {
           "& > :not(style)": { m: 1 },
         }}
       >
-        <TextField id="name" label="Your Name " onChange={handleInput} />
+        <TextField className="yourname" id="name" label="Your Name " onChange={handleInput} />
         <TextField
+          className="yourpass"
           id="remaining"
           sx={{
             width: "20vw",

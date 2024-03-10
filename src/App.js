@@ -1,5 +1,5 @@
 import React from "react";
-import FeedBackApp from "./FeedBackApp";
+import FeedBackApp from "./Components/FeedBackApp";
 import "./App.css";
 export default function App() {
   return (

@@ -1,0 +1,25 @@
+
+.Parent {
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px black;
+  width: 57%;
+  height: 40%;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(24,156,3);
+background: linear-gradient(0deg, rgba(24,156,3,1) 10%, rgba(194,117,25,1) 70%);
+}
+h1 {
+  margin: auto;
+  padding: 2vh;
+}
+
+.yourname{
+  background-color: white;
+}
+
+.yourpass{
+  background-color: #fff;
+}
